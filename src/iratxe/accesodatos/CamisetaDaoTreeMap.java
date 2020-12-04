@@ -11,15 +11,30 @@ public class CamisetaDaoTreeMap implements Dao<Camiseta> {
 	private static TreeMap<Long, Camiseta> camisetas = new TreeMap<>();
 	// creo unos productos de ejemplo para mostrar
 	static {
-		camisetas.put(1L, new Camiseta(1L, "Camiseta m/corta", "Marilyn", "Negro", "L",
-				"http://placeimg.com/640/480/tech?1", new BigDecimal("12.95"), 20, 1));
-		camisetas.put(2L, new Camiseta(2L, "Camiseta m/corta", "Elvis", "Negro", "XL",
-				"http://placeimg.com/640/480/tech?1", new BigDecimal("12.95"), 10, 1));
-
-		for (Long id = 3L; id <= 12L; id++) {
-			camisetas.put(id, new Camiseta(id, "Camiseta" + id, "Diseño" + id, "Color" + id, "Talla",
-					"http://placeimg.com/640/480/tech?" + id, new BigDecimal(5 * id), 0, 1));
-		}
+		camisetas.put(1L, new Camiseta(1L, "Camiseta m/corta", "Marilyn", "Negro", "L", "img/camisetas/13.jpg",
+				new BigDecimal("20.95"), 20, 1));
+		camisetas.put(2L, new Camiseta(2L, "Camiseta m/corta", "Cleo", "Negro", "M", "img/camisetas/11.jpg",
+				new BigDecimal("12.95"), 10, 1));
+		camisetas.put(3L, new Camiseta(3L, "Camiseta m/corta", "Sammy Gatete", "Negro", "M", "img/camisetas/10.jpg",
+				new BigDecimal("12.95"), 10, 1));
+		camisetas.put(4L, new Camiseta(4L, "Camiseta m/corta", "Elvira", "Negro", "M", "img/camisetas/9.jpg",
+				new BigDecimal("12.95"), 10, 1));
+		camisetas.put(5L, new Camiseta(5L, "Camiseta m/corta", "Pata", "Blanco", "M", "img/camisetas/8.jpg",
+				new BigDecimal("19.95"), 10, 1));
+		camisetas.put(6L, new Camiseta(6L, "Camiseta m/corta", "Motorista", "Blanco", "M", "img/camisetas/7.jpg",
+				new BigDecimal("12.95"), 10, 1));
+		camisetas.put(7L, new Camiseta(7L, "Camiseta m/corta", "Por la horda!", "Negro", "XL", "img/camisetas/6.jpg",
+				new BigDecimal("18.95"), 10, 1));
+		camisetas.put(8L, new Camiseta(8L, "Camiseta m/corta", "Alianza", "Azul", "XL", "img/camisetas/5.jpg",
+				new BigDecimal("12.95"), 10, 1));
+		camisetas.put(9L, new Camiseta(8L, "Camiseta m/corta", "Pennywise", "Verde Militar", "S", "img/camisetas/4.jpg",
+				new BigDecimal("12.95"), 10, 1));
+		camisetas.put(10L, new Camiseta(8L, "Camiseta m/corta", "Morticia", "Negro", "M", "img/camisetas/3.jpg",
+				new BigDecimal("12.95"), 10, 1));
+		camisetas.put(11L, new Camiseta(8L, "Camiseta m/corta", "Buho", "Negro", "M", "img/camisetas/2.jpg",
+				new BigDecimal("12.95"), 10, 1));
+		camisetas.put(12L, new Camiseta(8L, "Camiseta m/corta", "Marilyn Catrina", "Negro", "M", "img/camisetas/1.jpg",
+				new BigDecimal("19.95"), 10, 1));
 	}
 
 	// SINGLETON
